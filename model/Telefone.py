@@ -1,4 +1,3 @@
-import json
 
 class Telefone():
     def __init__(self,numero,ddd, codigoPais):

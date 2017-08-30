@@ -7,6 +7,3 @@ class Contato():
         self.numero = numero
         self.ddd = ddd
         self.codigoPais = codigoPais
-
-    def litarTelefones(self):
-        pass

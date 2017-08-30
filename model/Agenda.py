@@ -12,9 +12,8 @@ class Agenda(Pessoa):
     def contarContatos(self):
         pass
     def listarContatos(self):
+        pass
 
-        for contato in self.contatos:
-            print(contato)
 
     def incluirContato(self):
 
@@ -31,13 +30,8 @@ class Agenda(Pessoa):
             x = input("DESEJA ADICIONAR MAIS UM CONTATO:\n")
 
 
-    def buscarConato(self,nome):
-
-        for contato in self.contatos:
-            if contato == nome:
-                return contato
-            else:
-                return ("Infelizmente, nome do contato  digitado inválido")
+    def buscarConato(self):
+          pass
 
     def excluirContato(self,nome):
-        self.contatos.remove(self.buscarContato(nome))
+        pass
