@@ -5,4 +5,3 @@ class Telefone():
         self.numero = numero
         self.ddd = ddd
         self.codigoPais = codigoPais
-        self.Telefone = []
