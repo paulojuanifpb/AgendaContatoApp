@@ -8,27 +8,25 @@ class Agenda(Pessoa):
         self.nascimento = nascimento
         self.email = email
 
-
     def contarContatos(self):
         pass
+    
     def listarContatos(self):
         pass
-
 
     def incluirContato(self):
 
         while (x=='s'):
 
-            c1 = Contato(criacao=input('DIGITE A DATA DE HOJE:\n'), nome=input('NOME DO CONTATO:\n'), email=input('EMAIL:\n'), numero=input('NUMERO DE TELEFONE:\n'), ddd=input('DDD:\n'), codigoPais=input('CODIGO DO PAIS:\n'))
-            dicc = {'DATA DE CRIACAO DO CONTATO': c1.criacao, 'NOME': c1.nome, 'EMAIL': c1.email, 'NUMERO': c1.numero,'DDD': c1.ddd, 'CODIGO DO PAIS': c1.codigoPais }
+            c1 = Contato(criacao=input('Digite a data de hoje:\n'), nome=input('Nome do contato:\n'), email=input('Email:\n'), numero=input('Numero de telefone:\n'), ddd=input('DDD:\n'), codigoPais=input('Codigo do Pais:\n'))
+            dicc = {'Data de criação do contato': c1.criacao, 'Nome': c1.nome, 'Email': c1.email, 'Numero': c1.numero,'ddd': c1.ddd, 'Codigo do Pais': c1.codigoPais }
             arquivo = open("contatos.json", 'wb')
             pickle.dump(dicc, arquivo)
             arquivo.close()
             arquivo = open("contatos.json", "rb")
             dicc = pickle.load(arquivo)
             arquivo.close()
-            x = input("DESEJA ADICIONAR MAIS UM CONTATO:\n")
-
+            x = input("Deseja adicionar mais de um conatato:\n")
 
     def buscarConato(self):
           pass
